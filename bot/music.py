@@ -141,8 +141,8 @@ async def skip_music(message):
         return
 
     if voice_client.is_playing():
-        voice_client.stop()
         if hasattr(voice_client, 'queue') and voice_client.queue:
+            voice_client.stop()
             next_song = voice_client.queue.pop(0)
             await play_music(message, next_song)
         else:

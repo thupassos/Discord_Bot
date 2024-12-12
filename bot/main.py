@@ -16,7 +16,7 @@ load_dotenv()
 HOST = os.getenv("HOST")
 PORT = int(os.getenv("PORT"))
 
-#Criar uma conexão de soquete
+    # Cria um socket para o servidor para aceitar conexões de clientes TCP com IPv4
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 sock.connect((HOST, PORT))
 
