@@ -1,0 +1,7 @@
+discord.py
+requests
+pydub
+aiohttp
+yt-dlp
+python-dotenv
+PyNaCl
